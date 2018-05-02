@@ -133,12 +133,15 @@
      * 邮件主题：【微信JS-SDK反馈】具体问题
      * 邮件内容说明：用简明的语言描述问题所在，并交代清楚遇到该问题的场景，可附上截屏图片，微信团队会尽快处理你的反馈。
      */
+    var time=new Date().getTime();
+    var timeStamp=time.toString();
+    var noceStr = Math.random().toString(36).substr(2);
     wx.config({
         debug: false,
-        appId: 'wxf8b4f85f3a794e77',
-        timestamp: 1525239112,
-        nonceStr: 'Klff1PpETWpoChB3',
-        signature: '285e8873ad2d3e924289807e1a7de1572225586d',
+        appId: 'wx354c6df39bc7e275',
+        timestamp: timeStamp,
+        nonceStr: noceStr,
+        signature: "MD5",
         jsApiList: [
             'checkJsApi',
             'onMenuShareTimeline',
